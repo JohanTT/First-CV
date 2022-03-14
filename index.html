@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Johan</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="CVT-CV">
+        <div id="menu" class>
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#project">My Projects</a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <div class="text-content">
+                <h2 class="text-heading">Cao Viet Thang</h2>
+                <div class="text-description">Curriculum Vitae.</div>
+            </div>
+        </div>
+        <div id="about-me">
+            <!-- đôi lời về bản thân -->
+            <div class="content-section text-white">
+                <div>
+                    <h2 class="section-heading">About <span>Me</span></h2>
+                    <ul id="info">
+                        <li>Họ và tên: Cao Việt Thắng</li>
+                        <li>Ngày sinh: 05/09/2002</li>
+                        <li>Giới tính: Nam</li>
+                        <li>Quê quán: Hóc Môn, TP.HCM</li>
+                        <li>Gmail: thejohan39@gmail.com</li>
+                        <li>Đang học tại: Trường Đại Học Sư Phạm TP.HCM</li>
+                        <li>Ngành học: Công nghệ thông tin</li>
+                    </ul>
+                    <p class="about-text">Là một sinh viên năm hai đang chững chạc chuẩn bị bước ra đời. Tuy gặp nhiều khó khăn, vất vả  nhưng cũng vì vậy mà bản thân luôn cố gắng hết mình. Mục tiêu chính là trở thành một lập trình viên chuyên nghiệp với đầy đủ kiến thức chuyên môn.</p>
+                </div>
+                <img src="./assets/img/CVT.webp" alt="Ảnh đại diện" class="avatar">
+            </div>
+        </div>
+        <div id="project">
+            <div class="content-section">
+                <h2 class="section-heading text-white">Projects</h2>
+                <div class="line-string"></div>
+                    
+                    <!-- Project -->
+                <div class="row projects-list">
+                    <div class="col col-third"> 
+                        <div class="project-body">
+                            <i class="ti-money"></i>
+                            <h3 class="project-heading">Cấu Trúc Dữ Liệu</h3>
+                            <p class="project-desc">Đề án đầu tiên đó là giả lập cách ATM hoạt động trên code C++. Cùng với nhóm CTQM đã mô phỏng rất thành công nhưng trong phần giải thích code qua video nhóm đã không làm kỹ.</p>
+                            <button class="btn" onclick="window.open('https://github.com/JohanTT/ATM-CTDL','_blank')">Check on Github</button>
+                        </div>
+                    </div>
+
+                    <div class="col col-third">
+                        <div class="project-body">
+                            <i class="ti-ruler-pencil"></i>
+                            <h3 class="project-heading">Lý Thuyết Đồ Thị <br> Và Ứng Dụng</h3>
+                            <p class="project-desc">Đề án thứ hai là phát triển ứng dụng thực hiện trực quan hai thuật toán Prim & Dijkstra. Lần đầu phải thực hiện một ứng dụng có giao diện hẳn hoi nên nhóm đã rất chật vật vào lúc ban đầu nhưng kết quả cũng rất khả quan. Nhóm đã thiếu sót phần nhập ma trận để giúp người dùng sử dụng tiện hơn. Nhóm cũng đã chuẩn bị kỹ phần video giải thích và phần thuyết trình hơn.</p>
+                            <button class="btn" onclick="window.open('https://github.com/JohanTT/LTDT-2.3','_blank')">Check on Github</button>
+                        </div>
+                    </div>
+
+                    <div class="col col-third">
+                        <div class="project-body">
+                            <i class="ti-bag"></i>
+                            <h3 class="project-heading">Lập trình trên Windows</h3>
+                            <p class="project-desc">Đề án thứ ba là phát triển ứng dụng quản lý shop giày. Nhóm đã quyết định chơi lớn tự tạo một shop riêng mang tên CTQM-Store. Với kinh nghiệm từ hai đồ án trước nhóm đã phát huy tốt nhất. Tuy nhiên do phải quản lý những dữ liệu ra vào nên nhóm cũng đã hơi chật vật. Nhưng không thể phủ nhận mọi người đã làm rất tốt.</p>
+                            <button class="btn" onclick="window.open('https://github.com/JohanTT/Shoes-DONE','_blank')">Check on Github</button>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <div id="footer">
+            <div class="contact-list">
+                <a href="https://www.facebook.com/cao.vietthag/" target="_blank"><i class="ti-facebook"></i></a>
+                <a href="https://github.com/JohanTT" target="_blank"><i class="ti-github"></i></a>
+            </div>
+            <p class="copyright">By The Johan</p>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show", window.scrollY > 0);
+        });
+    </script>
+
+</body>
+</html>
