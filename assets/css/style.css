@@ -72,8 +72,11 @@ html {
 
 #banner {
     position: relative;
-    padding-top: 52%;
-    background: url('/assets/img/AV.jpg') top center / cover no-repeat;
+    background-color: rgb(32, 45, 58);
+}
+
+#banner img {
+    width: 100%;
 }
 
 #banner .text-content {
