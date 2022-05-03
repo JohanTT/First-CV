@@ -1,295 +1,206 @@
-/* Reset CSS */
-*{
-    /* Emmet */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+* {
+    font-family: "Lato", sans-serif;
+  }
+  
+  /* -------- HEADER -------- */
+  /*--------------------------*/
+  body {
+      font-size: 15px;
+  }
 
-html {
-    height: 100%;
-    scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
-}
+  .container.header {
+    margin-top: 20px;
+  /*   display: flex; */  
+  /*   justify-content: center; */
+  /*  apparently Codepen does not support display flex, on original project it works perfectly. Therefore, there will be some imperfections  */
+  }
 
-.text-white {
-    color: #fff !important;
-}
-
-#menu {
-    height: 46px;
-    /* background-color: rgba(0, 0, 0, 0.4); */
-    position: fixed;
-    text-align: center;
-    top: 10px;
-    left: 0px;
-    right: 0px;
+  strong {
+      font-size: 17px;
+      color: #ff6c00;
+  }
+  
+  .photo {
     z-index: 1;
-    transition: 0.6s;
-}
-
-#nav {
-    display: block;
-}
-
-#nav > li {
-    display: inline-block;
-}
-
-#nav li {
-    position: relative;
-}
-
-#nav > li > a {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-#nav li a {
-    text-decoration: none;
-    line-height: 46px;
-    padding: 0 50px;
-    display: inline-block;
-    font-size: 20px;
-    min-width: 242px;
-    transition: 0.2s;
-}
-
-#nav > li:hover > a {
-    color: #255784;
-    background-color: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
-
-.show {
-    background-color: rgba(81, 187, 233, 0.4);
-    transition: 0.5s;
-    margin: 10px 288px;
-}
-/* Kết thúc phần menu */
-
-/* Mở đầu phần banner */
-
-#banner {
-    position: relative;
-    background-color: rgb(32, 45, 58);
-}
-
-#banner img {
-    width: 100%;
-}
-
-#banner .text-content {
-    position: absolute;
-    bottom: 47px;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-}
-
-#banner .text-heading {
-    font-weight: 500;
-    font-size: 24px;
-}
-
-#banner .text-description {
-    font-size: 15px;
-    margin-top: 25px;
-    text-shadow: 0 0 1px #000;
-}
-
-/* Kết thúc vần banner */
-
-/* Mở đầu phần giới thiệu bản thân */
-
-#about-me {
-    height: 970px;
-    background-color: rgb(32, 45, 58);
-}
-
-#about-me .content-section {
-    width: 1000px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 70px;
-    padding-left: 16px;
-    padding-right: 16px;
-    justify-content:space-around;
-    align-items: center;
+    margin-right: -13%;
+  }
+  
+  img.perfil-photo {
+    width: 230px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+  }
+  
+  .title-name {
+    background-color: #eee;
+    height: 210px;
+    width: auto;
     display: flex;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em 0 8em;
+  }
+  
+  .title-name h1 {
+    font-family:'Lobster', cursive;
+    font-size: 4em;
+    letter-spacing: .02em;
+  }
+  
+  .title-name h3 {
+    color: #ff6c00;
+    letter-spacing: .05em;
+    margin-top: 0;
+  }
+  
+  /* -------- GENERAL CONTENT -------- */
+  /*--------------------------*/
+  
+  .container.content {
+    margin-top: 5px;
+  }
+  
+  i.fa {
+    color: #ff6c00;
+    font-size: 23px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+  }
 
-#about-me .section-heading span {
-    color: rgb(81, 187, 233);
-}
-
-#about-me .section-heading {
-    font-weight: 500;
-    letter-spacing: 5px;
-    font-size: 70px;
-    margin: 35px 0;
-}
-
-#about-me .ti-id-badge {
-    margin-right: 5px;
-    font-size: 20px;
-}
-
-#about-me .about-text {
-    margin-top: 4px;
-    font-size: 20px;
-    width: 500px;
-    line-height: 1.4;
-    letter-spacing: 1.5px;
-    text-align: left;
-}
-
-#info > li {
-    line-height: 2.5;
-    letter-spacing: 1.5px;
-    font-size: 20px;
+  .skill-1 {
+    width: 100%;
+  }
+  
+  /* -------- EXPERIENCE CONTENT -------- */
+  /*--------------------------*/
+  
+  .table.experience td {
+    padding: 20px;
+  }
+  
+  td.year {
+    width: 140px;
+    font-size: 13px;
+  }
+  
+  /* -------- RIGHT SIDEBAR -------- */
+  /*--------------------------*/
+  
+  .side-info {
+    border-left: 1px solid #eee;
+  }
+  
+  .contact,
+  .skills,
+  .about {
+    margin-left: 10px;
+  }
+  
+  .contact ul {
     list-style-type: none;
-}
+    padding: 0;
+  }
 
-#info li:nth-child(6) {
-    background: rgb(51, 110, 189);
-}
+  .contact-ul .fa {
+    padding-right: 10px;
+    font-size: 17px;
+  }
 
-#about-me .avatar {
-    height: auto;
-    width: 450px;
-    padding-left: 30px;
-    border-radius: 4%;
-}
-
-/* Kết thúc phần giới thiệu về bản thân */
-
-#project {
-    height: 970px;
-    background-color: rgb(21, 28, 33);
-}
-
-#project .content-section {
-    width: 1300px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px  0 120px;
-}
-
-#project i {
-    color: rgb(51, 110, 189);
-    font-size: 50px;
-    display: block;
-}
-
-#project .section-heading {
-    font-weight: 600;
-    letter-spacing: 10px;
-    font-size: 100px;
-    text-align: center;
-}
-
-#project .line-string {
-    content: "";
-    width: 100%;
-    border-bottom: 5px solid rgb(65, 173, 244);
-    border-radius: 60%;
-    margin-bottom: 50px;
-}
-
-#project .projects-list {
-    margin-top: 16px;
-    justify-content:space-around;
-    align-items: center;
-    display: flex;
-}
-
-#project .row {
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
-#project .col {
-    float: left;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-#project .col-third {
-    width: 33.33333%;
-    margin: 0 10px;
-}
-
-#project .project-body {
-    background-color: #fff;
-    padding: 16px;
-    text-align: center;
-    border-radius: 5%;
-    min-height: 500px;
-}
-
-#project .project-heading {
-    letter-spacing: 1.7px;
-    font-size: 25px;
-    min-height: 60px;
-    margin-top: 15px;
-}
-
-#project .project-desc {
-    letter-spacing: 1.5px;
-    font-size: 20px;
-    margin-top: 15px;
-    line-height: 1.4;
-    min-height: 350px;
-}
-
-#project .btn {
-    color: #fff;
-    background-color: rgb(65, 173, 244);
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px;
-    text-align: center;
-    appearance: none;
-    -webkit-appearance: none;
-    transition: 0.2s;
-}
-
-#project .btn:hover {
-    background-color: rgb(50, 75, 89);
-    cursor: pointer;    
-    color: rgb(81, 187, 233);
-    background-color: rgb(50, 75, 89);
-    box-shadow: 0 0 10px rgb(65, 173, 244), 0 0 20px rgb(65, 173, 244), 0 0 40px rgb(65, 173, 244);
-}
-
-#footer {
-    padding: 15px 15px;
-    text-align: center;
-    background-color: rgb(50, 75, 89);
-}
-
-#footer .contact-list {
-    font-size: 24px;
-}
-
-#footer .contact-list a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#footer .copyright a:hover,
-#footer .contact-list a:hover {
-    color: rgba(81, 187, 233, 0.4);
-}
-
-#footer .copyright {
-    top: 15px;
-    color: rgb(81, 187, 233);
-}
+  .skills ul {
+    list-style-type: disc;
+    margin: 5px 0 0 0;
+    padding-left: 40px;
+  }
+  
+  .skills ul li {
+    margin-bottom: 3px;
+  }
+  
+  #level .fa {
+    font-size: 15px;
+    margin-right: 2px;
+  }
+  
+  #development {
+    border-right: 2px solid #eee;
+  }
+  
+  .about > p {
+    line-height: 1.5;
+  }
+  
+  /* -------- FOOTER -------- */
+  /*--------------------------*/
+  .row.footer {
+    margin-top: 10px;
+  }
+  
+  .footer p{
+    font-size: 15px;
+  }
+  
+  /*-------- MEDIA QUERIES-------- */
+  /*------- as a small project, I've decided to add with the style.css ---------*/
+  
+  @media only screen and (max-width: 1200px) {
+  
+    .title-name h1 {
+      font-size: 3.2em;
+      padding-left: 0.5em;
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+  
+    .container.header .row {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .photo {
+      margin-right: 0;
+    }
+  
+    img.perfil-photo {
+      width: 205px;
+      border: 10px solid #eee;
+      margin-bottom: 1em;
+    }
+  
+    .title-name {
+      height: 140px;
+      padding: 0 2em;
+    }
+  
+    .title-name h1 {
+      font-size: 3.2em;
+    }
+  }
+  
+  @media only screen and (max-width: 497px) {
+  
+    .photo {
+      max-width: 319px;
+    }
+  
+    img.perfil-photo {
+      width: 150px;
+    }
+  
+    .title-name h1 {
+      font-size: 2em;
+      padding-left: 0;
+    }
+  
+    .title-name h3 {
+      font-size: 1.2em;
+    }
+  
+    .title-name {
+      height: 110px;
+    }
+  }
+  

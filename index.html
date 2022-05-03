@@ -1,99 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Johan</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
-</head>
-<body>
-    <div id="CVT-CV">
-        <div id="menu" class>
-            <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#project">My Projects</a></li>
-            </ul>
+  <head>
+    <title>Cao Việt Thắng - CV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  </head>
+  <!-- Reference by lecturer: Lê Hoàng Việt Tuấn -->
+  <body>
+    <!--  ******* HEADER ******* -->
+    <div class="container header">
+      <div class="row">
+        <div class="photo col-md-3 col-sm-12">
+          <img class="perfil-photo" src="assets/img/CVT.webp" alt="Cao Việt Thắng">
         </div>
-        <div id="banner">
-            <img src="./assets/img/AV.jpg" alt="Ảnh banner super cool ngầu">
-            <div class="text-content">
-                <h2 class="text-heading">Cao Viet Thang</h2>
-                <div class="text-description">Curriculum Vitae.</div>
-            </div>
+        <div class="title-name col-md-8 col-sm-12">
+          <h1>Cao Việt Thắng</h1>
+          <!-- <h3>Junior Front-end Developer</h3> -->
         </div>
-        <div id="about-me">
-            <!-- đôi lời về bản thân -->
-            <div class="content-section text-white">
-                <div>
-                    <h2 class="section-heading">About <span>Me</span></h2>
-                    <ul id="info">
-                        <li>Họ và tên: Cao Việt Thắng</li>
-                        <li>Ngày sinh: 05/09/2002</li>
-                        <li>Giới tính: Nam</li>
-                        <li>Quê quán: Hóc Môn, TP.HCM</li>
-                        <li>Gmail: thejohan39@gmail.com</li>
-                        <li>Đang học tại: Trường Đại Học Sư Phạm TP.HCM</li>
-                        <li>Ngành học: Công nghệ thông tin</li>
-                    </ul>
-                    <p class="about-text">Là một sinh viên năm hai đang chững chạc chuẩn bị bước ra đời. Tuy gặp nhiều khó khăn, vất vả  nhưng cũng vì vậy mà bản thân luôn cố gắng hết mình. Mục tiêu chính là trở thành một lập trình viên chuyên nghiệp với đầy đủ kiến thức chuyên môn.</p>
-                </div>
-                <img src="./assets/img/CVT.webp" alt="Ảnh đại diện" class="avatar">
-            </div>
-        </div>
-        <div id="project">
-            <div class="content-section">
-                <h2 class="section-heading text-white">Projects</h2>
-                <div class="line-string"></div>
-                    
-                    <!-- Project -->
-                <div class="row projects-list">
-                    <div class="col col-third"> 
-                        <div class="project-body">
-                            <i class="ti-money"></i>
-                            <h3 class="project-heading">Cấu Trúc Dữ Liệu</h3>
-                            <p class="project-desc">Đề án đầu tiên đó là giả lập cách ATM hoạt động trên code C++. Cùng với nhóm CTQM đã mô phỏng rất thành công nhưng trong phần giải thích code qua video nhóm đã không làm kỹ.</p>
-                            <button class="btn" onclick="window.open('https://github.com/JohanTT/ATM-CTDL','_blank')">Check on Github</button>
-                        </div>
-                    </div>
-
-                    <div class="col col-third">
-                        <div class="project-body">
-                            <i class="ti-ruler-pencil"></i>
-                            <h3 class="project-heading">Lý Thuyết Đồ Thị <br> Và Ứng Dụng</h3>
-                            <p class="project-desc">Đề án thứ hai là phát triển ứng dụng thực hiện trực quan hai thuật toán Prim & Dijkstra. Lần đầu phải thực hiện một ứng dụng có giao diện hẳn hoi nên nhóm đã rất chật vật vào lúc ban đầu nhưng kết quả cũng rất khả quan. Nhóm đã thiếu sót phần nhập ma trận để giúp người dùng sử dụng tiện hơn. Nhóm cũng đã chuẩn bị kỹ phần video giải thích và phần thuyết trình hơn.</p>
-                            <button class="btn" onclick="window.open('https://github.com/JohanTT/LTDT-2.3','_blank')">Check on Github</button>
-                        </div>
-                    </div>
-
-                    <div class="col col-third">
-                        <div class="project-body">
-                            <i class="ti-bag"></i>
-                            <h3 class="project-heading">Lập trình trên Windows</h3>
-                            <p class="project-desc">Đề án thứ ba là phát triển ứng dụng quản lý shop giày. Nhóm đã quyết định chơi lớn tự tạo một shop riêng mang tên CTQM-Store. Với kinh nghiệm từ hai đồ án trước nhóm đã phát huy tốt nhất. Tuy nhiên do phải quản lý những dữ liệu ra vào nên nhóm cũng đã hơi chật vật. Nhưng không thể phủ nhận mọi người đã làm rất tốt.</p>
-                            <button class="btn" onclick="window.open('https://github.com/JohanTT/Shoes-DONE','_blank')">Check on Github</button>
-                        </div>
-                    </div>
-                </div>
-            </div>                
-        </div>
-        <div id="footer">
-            <div class="contact-list">
-                <a href="https://www.facebook.com/cao.vietthag/" target="_blank"><i class="ti-facebook"></i></a>
-                <a href="https://github.com/JohanTT" target="_blank"><i class="ti-github"></i></a>
-            </div>
-            <p class="copyright">By The Johan</p>
-        </div>
+      </div>
     </div>
+    <!-- ******* EXPERIENCE CONTENT******* -->
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+          <h2><i class="fa fa-suitcase" aria-hidden="true"></i> Experience</h2>
+          <table class="table experience">
+            <th>Job</th>
+            <th>Year</th>
+            <tr>
+              <td><strong>Course Project - (Web Programming)</strong>
+                <ul>
+                   <b>Learning website.</b>
+                  <li>Role: Leader (team 7)</li>
+                  <li>Main responsibilities: Main Code & Manager </li>
+                </ul>
+              </td>
+              <td class="year">February 2022 - May 2022</td>
+            </tr>
+            <tr>
+              <td><strong>Course Project - (Mobile Programming)</strong>
+                  <ul>
+                     <b>Expense tracker app.</b>
+                  <li>Role: Leader (team 4)</li>
+                  <li>Main responsibilities: Main Code & Manager</li>
+                  </ul>
+                </td>
+              <td class="year">February 2022 - May 2022</td>
+            </tr>
+              <tr>
+                <td><strong>Course Project - (WinForms Application)</strong>
+                  <ul>
+                     <b>Shoes store management app.</b>
+                  <li>Role: Leader (team 5)</li>
+                  <li>Main responsibilities: Main Code & Manager</li>
+                  </ul>
+                </td>
+              <td class="year">September 2021 - October 2021</td>
+            </tr>
+              <tr>
+                <td><strong>Course Project - (Applications of Graph Theory)</strong>
+                  <ul>
+                     <b>Prim's & Dijkstra's algorithm visualization.</b>
+                  <li>Role: Leader (team 5)</li>
+                  <li>Main responsibilities: Main Code & Manager</li>
+                  </ul>
+                </td>
+              <td class="year">September 2021 - October 2021</td>
+            </tr>
+          </table>
 
-    <script>
-        window.addEventListener("scroll", function(){
-            var menu = document.getElementById("menu");
-            menu.classList.toggle("show", window.scrollY > 0);
-        });
-    </script>
+          <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+          <p><strong>Ho Chi Minh City University of Education </strong><br> <b>Major: Information Technology </b> <br> 2020 - present</p>
+          <p><strong>Pham Van Sang High School</strong><br>2017 - 2020</p>
+        </div>
 
-</body>
+        <!-- ******* RIGHT SIDE BAR INFO ******* -->
+        <div class="col-md-4 side-info">
+          <div class="contact">
+            <h2><i class="fa fa-home" aria-hidden="true"></i> Info</h2>
+            <ul class="contact-ul">
+                <li><i class="fa fa-calendar" aria-hidden="true"></i>September/05/2002</li>
+                <li><i class="fa fa-github" aria-hidden="true"></i>JohanTT</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>thejohan39@gmail.com</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>0909161871</li>
+                <li><i class="fa fa-location-arrow" aria-hidden="true"></i>Tan Hiep Commune, Hoc Mon district, Ho Chi Minh city, Vietnam.</li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h2><i class="fa fa-wrench" aria-hidden="true"></i> Skills</h2>
+            <h3></h3>
+            <div class="row">
+              <div class="col-md-5 col-xs-6 skill-1">
+                <ul>
+                  <li>Ability to use more than one development language</li>
+                  <li>Good in teamwork. Able to lead a team</li>
+                  <li>Keen attention to detail</li>
+                  <li>Strong problem solver</li>
+                  <li>Critical thinking</li>
+                  <li>English communication well</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <h2><i class="fa fa-code" aria-hidden="true"></i> Development</h2>
+            <h3></h3>
+                <div class="row">
+                  <div class="col-md-5 col-xs-6" id="development">
+                    <ul>
+                      <li>C++</li>
+                      <li>C#</li>
+                      <li>React</li>
+                      <li>Git / Github</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-7 col-xs-6">
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>PHP</li>
+                    </ul>
+                  </div>
+                </div>
+          </div>
+          <div class="about">
+              <h2><i class="fa fa-user" aria-hidden="true"></i> About Me</h2>
+              <p>I am energetic, with excellent capacity to adapt to new challenges. As an active learner and strong team player I’m able to work in any diverse &amp; fast-paced environment and also take full responsibility for my own personal development. At the moment I am a 2nd year student far from what I once was but not yet what I'm going to be.</p>
+          </div>
+        </div>
+        <!-- <div class="row footer">
+          <div class="col-md-11">
+            <blockquote class="blockquote-reverse">
+              <p>Reference</p>
+              <footer>Lecturer: <strong>Lê Hoàng Việt Tuấn</strong></footer>
+            </blockquote>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
 </html>
